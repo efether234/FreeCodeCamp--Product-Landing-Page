@@ -1,0 +1,249 @@
+/* yellow color: #f4f407 */
+
+/* ******************************
+ *
+ * Global Styles
+ *
+ * ****************************** */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 114rem;
+}
+
+/* ******************************
+ *
+ * Utilities
+ *
+ * ****************************** */
+
+
+
+/* ******************************
+ *
+ * Components
+ *
+ * ****************************** */
+
+.section-heading {
+    border-bottom: .3rem solid #f4f407;
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    border: 1px solid #000;
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: .5rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-solid {
+    background-color: #f4f407;
+    color: #000;
+}
+
+.btn-ghost {
+    
+    color: #000;
+}
+
+/* ******************************
+ *
+ * Header
+ *
+ * ****************************** */
+
+ /* Header has same margin-top as section#callout
+    for some reason. I set margin-top here to -10rem
+    to offset the section#callout margin-top */
+
+.header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    margin-top: -10rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: inherit;
+}
+
+.logo {
+    margin-right: 1.5rem;
+    width: 4.5rem;
+}
+
+.company-name {
+    font-family: 'Fredoka One', fantasy;
+    font-size: 2.5rem;
+}
+
+/* ***** Navigation ***** */
+
+.main-nav {
+    flex: 0 0 auto;
+    margin-left: auto;
+}
+
+.nav-link {
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 2rem;
+    text-transform: uppercase;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* TODO: Change colors once color scheme is decided upon */
+.nav-link a:hover,
+.nav-link a:active {
+    border-bottom: 2px solid #f4f407;
+    color: black;
+    text-decoration: none;
+}
+
+/* ******************************
+ *
+ * Callout
+ *
+ * ****************************** */
+
+.callout {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10rem 0 7rem 0;
+}
+
+.cta-box {
+    flex: 0 0 50%;
+}
+
+.cta-heading {
+    font-family: 'Merriweather', serif;
+    font-size: 5rem;
+}
+
+.callout-img-box {
+    flex: 0 0 50%;
+}
+
+.callout-img {
+    display: block;
+    margin: 0 auto;
+    width: 30rem;
+}
+
+/* ******************************
+ *
+ * About
+ *
+ * ****************************** */
+
+.about {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.about-img {
+    border-radius: 50%;
+    width: 30rem;
+}
+
+.about-caption {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.about-text {
+    padding-left: 3rem;
+}
+
+.about-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* ******************************
+ *
+ * Factory
+ *
+ * ****************************** */
+
+.factory {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0;
+}
+
+/* ******************************
+ *
+ * Pricing
+ *
+ * ****************************** */
+
+.pricing {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0;
+}
+
+.price-cards {
+    display: flex;
+}
+
+.price-card {
+    background-color: yellow;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-right: 2.5rem;
+    text-align: center;
+    width: 33.3%;
+}
+
+.price-card:last-child {
+    margin-right: 0;
+}
+
+.card-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
